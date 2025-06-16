@@ -98,7 +98,7 @@ body:
     attributes:
       label: Simulation parameters
       description: Simulation parameters (duration, timestep, etc.)
-      placeholder: Duration: 10s, Timestep: 0.001s, etc.
+      placeholder: Duration 10s, Timestep 0.001s, etc.
     validations:
       required: false
 

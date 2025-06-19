@@ -4,17 +4,11 @@ labels: [bug]
 assignees: []
 body:
   - type: textarea
-    attributes:
-      label: Description
-      value: |
-        Thanks for taking the time to fill out this bug report!
-
-  - type: textarea
     id: description
     attributes:
       label: Description
       description: A clear and concise description of what the bug is.
-      placeholder: Tell us what happened!
+      placeholder: Thanks for taking the time to fill out this bug report!
     validations:
       required: true
 
@@ -49,12 +43,31 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
+    id: farms-packages
+    attributes:
+      label: FARMS packages
+      description: What packages of FARMS are relevant?
+      multiple: true
+      options:
+        - farms_core
+        - farms_sim
+        - farms_models
+        - farms_mujoco
+        - farms_pybullet
+        - farms_network
+        - farms_muscle
+    validations:
+      required: true
+
+  - type: dropdown
     id: farms-version
     attributes:
       label: FARMS version
       description: What version of FARMS are you running?
-      placeholder: e.g. 1.2.3
+      options:
+        - 0.0.1
+      default: 0
     validations:
       required: true
 

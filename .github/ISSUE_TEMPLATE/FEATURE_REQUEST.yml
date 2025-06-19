@@ -28,8 +28,8 @@ body:
       - farms_pybullet
       - farms_network
       - farms_muscle
-    validations:
-      required: true
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Additional context
